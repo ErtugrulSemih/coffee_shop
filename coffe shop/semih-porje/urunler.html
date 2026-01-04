@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz - Lil Street Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVİGASYON -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Lil Street Coffee</a></div>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ÜRÜN MENÜSÜ BAŞLANGICI -->
+    <section>
+        <h1 class="section-title">Menümüz</h1>
+        
+        <!-- CSS ile Filtreleme Mantığı (Radio Button Hack) -->
+        <!-- Bu inputlar gizlenecek, ancak seçim durumları CSS ile yakalanacak -->
+        <input type="radio" name="filter" id="filter-all" checked hidden>
+        <input type="radio" name="filter" id="filter-hot" hidden>
+        <input type="radio" name="filter" id="filter-cold" hidden>
+        <input type="radio" name="filter" id="filter-dessert" hidden>
+
+        <!-- Filtreleme Butonları (Label Olarak) -->
+        <div class="filter-buttons" style="text-align: center; margin-bottom: 2rem;">
+            <!-- "for" niteliği ile yukarıdaki inputları tetiklerler -->
+            <label for="filter-all" class="btn filter-btn">Tümü</label>
+            <label for="filter-hot" class="btn filter-btn">Sıcak Kahveler</label>
+            <label for="filter-cold" class="btn filter-btn">Soğuk Kahveler</label>
+            <label for="filter-dessert" class="btn filter-btn">Tatlılar</label>
+        </div>
+
+        <!-- Ürün Listesi Grid Yapısı -->
+        <div class="grid-container">
+            
+            <!-- Ürün 1: Americano (Sıcak) -->
+            <div class="card hot">
+                <img src="assets/americano.jpg" alt="Americano" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Americano</h3>
+                    <p>Espresso ve sıcak suyun sade uyumu.</p>
+                    <span class="price">55 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün 2: Latte (Sıcak) -->
+            <div class="card hot">
+                <img src="assets/latte.jpg" alt="Latte" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Caffe Latte</h3>
+                    <p>Bol sütlü, yumuşak içimli klasik.</p>
+                    <span class="price">75 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün 3: Cappuccino (Sıcak) -->
+            <div class="card hot">
+                <img src="assets/cappucino.jpg" alt="Cappuccino" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Cappuccino</h3>
+                    <p>Eşit oranda espresso, süt ve süt köpüğü.</p>
+                    <span class="price">75 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün 4: Cold Brew (Soğuk) -->
+            <div class="card cold">
+                <img src="assets/cold-brew.jpg" alt="Cold Brew" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Cold Brew</h3>
+                    <p>24 saat soğuk demleme tekniği ile hazırlandı.</p>
+                    <span class="price">90 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün 5: Ice Matcha (Soğuk) -->
+            <div class="card cold">
+                <img src="assets/ice-matcha.jpg" alt="Ice Matcha" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Ice Matcha Latte</h3>
+                    <p>Soğuk sütün matcha tozuyla mükemmel buluşması.</p>
+                    <span class="price">90 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün 6: Cheesecake (Tatlı) -->
+            <div class="card dessert">
+                <img src="assets/limon-cheesecake.jpg" alt="Cheesecake" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Limonlu Cheesecake</h3>
+                    <p>Kahvenin yanına en çok yakışan tatlımız.</p>
+                    <span class="price">85 ₺</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ÜRÜN MENÜSÜ BİTİŞİ -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Lil Street Coffee. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

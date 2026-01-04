@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Lil Street Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVİGASYON -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Lil Street Coffee</a></div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- İLETİŞİM SAYFASI İÇERİĞİ -->
+    <section>
+        <h1 class="section-title">Bize Ulaşın</h1>
+
+        <div style="display: flex; gap: 4rem; flex-wrap: wrap; justify-content: center;">
+            
+            <!-- İletişim Formu -->
+            <div class="contact-form" style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Mesaj Gönderin</h2>
+                <form action="#" method="POST">
+                    
+                    <!-- İsim Girişi -->
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız</label>
+                        <input type="text" id="name" name="name" placeholder="Örn: Ertuğrul Çelebi" required>
+                    </div>
+
+                    <!-- E-posta Girişi -->
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
+                    </div>
+
+                    <!-- Mesaj Alanı -->
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Size nasıl yardımcı olabiliriz?" required></textarea>
+                    </div>
+
+                    <!-- Gönder Butonu -->
+                    <button type="submit" class="btn" style="width: 100%;">Gönder</button>
+                </form>
+            </div>
+
+            <!-- İletişim Bilgileri ve Harita -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">İletişim Bilgileri</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Adres:</strong> Fakülteler, Geçit Sokak No:18, Çankaya/Ankara, Türkiye</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Telefon:</strong> +90 (212) 555 00 00</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>E-posta:</strong> lilstreetcoffee@gmail.com</p>
+                    <p><strong>Çalışma Saatleri:</strong> Her gün 08:00 - 23:00</p>
+                </div>
+
+                <!-- Temsili Harita Görseli (Placeholder) -->
+                <div style="width: 100%; height: 300px;">
+                    <!-- Google Maps Iframe -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.4927306003974!2d32.87146690838172!3d39.93036688032823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fb54d3aea75%3A0x60c28a976c2636cd!2sLil%E2%80%99%20Street%20Coffee%26Cake!5e0!3m2!1str!2sus!4v1766165236344!5m2!1str!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 10px; box-shadow: var(--shadow);" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Lil Street Coffee. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

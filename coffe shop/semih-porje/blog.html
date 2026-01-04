@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Lil Street Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVİGASYON -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Lil Street Coffee</a></div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BLOG LİSTESİ BÖLÜMÜ -->
+    <section>
+        <h1 class="section-title">Kahve Günlükleri</h1>
+
+        <!-- Blog Gönderisi 1 -->
+        <article class="blog-post">
+            <img src="assets/coffee-brew.jpg" alt="Kahve Çekirdeği" class="blog-img">
+            <div class="blog-content">
+                <span class="blog-date">19 Aralık 2023</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Mükemmel Kahve Nasıl Demlenir?</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    Evinizin konforunda, profesyonel bir barista dokunuşuyla kahve hazırlamak sandığınızdan çok daha ulaşılabilir bir lüks. Doğru teknikler, taze çekirdekler ve biraz sabır ile mutfağınızı mis kokulu bir üçüncü dalga kahve dükkanına dönüştürebilirsiniz.
+                </p>
+                
+                <!-- Gizli Checkbox -->
+                <input type="checkbox" id="post-1" class="read-more-toggle">
+                
+                <!-- Gizli İçerik -->
+                <div class="extra-content">
+                    <p><strong>1. Tazelik:</strong> Kahve çekirdeklerinin kavrulma tarihi çok kritiktir. İdeal aroma için kavrulduktan sonraki 3-14 gün arasında tüketilmesi önerilir. Oksijenle teması kesmek için hava almayan kaplarda saklayın.</p>
+                    <br>
+                    <p><strong>2. Öğütme:</strong> Kahve, demlenmeden hemen önce öğütülmelidir. Türk kahvesi için pudra kıvamı, Espresso için ince, V60 için orta, French Press için ise deniz tuzu kalınlığında öğütme tercih edilmelidir.</p>
+                    <br>
+                    <p><strong>3. Su Kalitesi:</strong> Kahvenin %98'i sudur. Musluk suyu yerine, pH değeri dengeli ve kireçsiz içme suyu kullanmak tat profilini dramatik şekilde iyileştirir. İdeal su sıcaklığı 92-96 derecedir; kaynar su kahveyi yakar ve acılaştırır.</p>
+                    <br>
+                    <p><strong>4. Oran:</strong> Altın oran genellikle 1 gram kahveye 16 ml sudur. Damak tadınıza göre bu oranı 1:15 (daha sert) veya 1:17 (daha yumuşak) olarak ayarlayabilirsiniz.</p>
+                </div>
+
+                <!-- Etiket Butonu -->
+                <label for="post-1" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: pointer;">Devamını Oku</label>
+            </div>
+        </article>
+
+        <!-- Blog Gönderisi 2 -->
+        <article class="blog-post">
+            <img src="assets/coffee-beans.png" alt="Kahve Kavurma" class="blog-img">
+            <div class="blog-content">
+                <span class="blog-date">10 Aralık 2023</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Çekirdek Çeşitlerini Tanıyalım</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    Kahve dünyasının iki devi: Arabica ve Robusta. Etiyopya'nın çiçeksi bahçelerinden Brezilya'nın uçsuz bucaksız platolarına uzanan bu lezzet yolculuğunda, çekirdeklerin genetiği ve yetiştikleri coğrafya fincanınızdaki tadı nasıl şekillendiriyor?
+                </p>
+
+                <input type="checkbox" id="post-2" class="read-more-toggle">
+                
+                <div class="extra-content">
+                    <p>
+                        <strong>Arabica (Coffea Arabica):</strong> Dünya kahve üretiminin yaklaşık %60-70'ini oluşturur. Genellikle 600m ve üzeri yüksek rakımlarda yetişir. Hassas bir bitkidir ve iklim koşullarından çabuk etkilenir. Tat profili; meyvemsi, çiçeksi, asiditesi yüksek, aromatik ve şekerlidir. Kafein oranı düşüktür (%1-1.5). Etiyopya Yirgacheffe, Kolombiya Supremo gibi çeşitler buna örnektir.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Robusta (Coffea Canephora):</strong> Daha alçak rakımlarda ve sıcak iklimlerde yetişir. Hastalıklara ve böceklere karşı dirençlidir. Kafein oranı Arabica'nın neredeyse iki katıdır (%2.7), bu da ona daha acı, topraksı ve odunsu bir tat verir. Gövdesi yüksektir ve espresso karışımlarında o meşhur 'kremayı' oluşturmak için sıklıkla tercih edilir.
+                    </p>
+                </div>
+
+                <label for="post-2" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: pointer;">Devamını Oku</label>
+            </div>
+        </article>
+
+        <!-- Blog Gönderisi 3 -->
+        <article class="blog-post">
+            <img src="assets/latte-art.jpg" alt="Kahve Sanatı" class="blog-img">
+            <div class="blog-content">
+                <span class="blog-date">01 Aralık 2023</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Latte Art Sanatı</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    Kahve fincanının üzerindeki o estetik kalp veya lale deseni sadece bir süs değil, aynı zamanda sütün ve espressonun mükemmel dokusunun bir kanıtıdır. Latte Art, sütün kimyasıyla espressonun fiziğinin buluştuğu bir sahne sanatıdır.
+                </p>
+
+                <input type="checkbox" id="post-3" class="read-more-toggle">
+                
+                <div class="extra-content">
+                    <p>
+                        <strong>Sütün Kimyası (Microfoam):</strong> İyi bir latte art için sütü 60-65 dereceye kadar ısıtmalısınız. Buhar çubuğuyla sütün içine hava zerk ederken oluşan binlerce minik baloncuk, sütün "mikro köpük" denilen pürüzsüz, parlak ve boya kıvamında bir hale gelmesini sağlar.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Espresso Tabanı (Canvas):</strong> Altın sarısı-kahverengi arası, yoğun ve elastik bir kremaya (crema) sahip taze bir espresso şarttır. Crema, sütün üzerinde çizim yapabileceğiniz tuval görevini görür. Süt önce fincanın merkezine, biraz yüksekten dökülerek espresso ile karıştırılır. Fincan yarıya kadar dolduğunda, sürahi (pitcher) yüzeye yaklaştırılır ve bilek hareketleriyle şekil verilir.
+                    </p>
+                </div>
+
+                <label for="post-3" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: pointer;">Devamını Oku</label>
+            </div>
+        </article>
+
+        <!-- Blog Gönderisi 4 -->
+        <article class="blog-post">
+            <img src="assets/coffee-journey.jpeg" alt="Kahve Yolculuğu" class="blog-img">
+            <div class="blog-content">
+                <span class="blog-date">25 Aralık 2023</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Kahve Yolculuğu</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    Fincanımızdaki o koyu iksirin arkasında, ekvatordan başlayıp mahallenizdeki kafeye uzanan binlerce kilometrelik, emek dolu bir serüven var. Çiftçinin elinden kavurucunun sezgisine, çekirdeğin başından geçenleri keşfedin.
+                </p>
+
+                <input type="checkbox" id="post-4" class="read-more-toggle">
+                
+                <div class="extra-content">
+                    <p>
+                        <strong>1. Ekim ve Hasat:</strong> Yolculuk, "Kahve Kuşağı"ndaki verimli volkanik topraklarda başlar. Kahve ağacı 3-4 yılda ilk meyvesini verir. Olgunlaşan kırmızı "kahve kirazları" genellikle özenle tek tek elle toplanır.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>2. İşleme (Processing):</strong> Meyvelerin çekirdekten ayrılması gerekir. "Yıkanmış" yöntemde meyve eti suyla temizlenir ve asiditesi yüksek tatlar ortaya çıkar. "Doğal" yöntemde ise meyve çekirdeğin üzerinde kurutulur, bu da daha gövdeli ve meyvemsi tatlar yaratır.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>3. Kavurma (Roasting):</strong> Yeşil çekirdeklerin "kader anı". 200+ derecelik ısıda çekirdekler "pop" sesi çıkararak aromasını kazanır. Maillard reaksiyonu ile o bildiğimiz çikolata, karamel, fındık notaları ortaya çıkar.
+                    </p>
+                </div>
+
+                <label for="post-4" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; cursor: pointer;">Devamını Oku</label>
+            </div>
+        </article>
+
+    </section>
+    <!-- BLOG BÖLÜMÜ BİTİŞİ -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Lil Street Coffee. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

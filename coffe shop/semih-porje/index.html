@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Karakter seti ve responsive görünüm ayarları -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lil Street Coffee - Ana Sayfa</title>
+    
+    <!-- CSS Dosyasına Bağlantı -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVİGASYON (ÜST MENÜ) BAŞLANGICI -->
+    <header>
+        <nav>
+            <!-- Logo Alanı -->
+            <div class="logo"><a href="index.html">Lil Street Coffee</a></div>
+            
+            <!-- Hamburger Menü Butonları (HTML CSS Hack) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Menü Linkleri -->
+            <ul class="nav-links">
+
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- NAVİGASYON BİTİŞİ -->
+
+    <!-- HERO (KARŞILAMA) BÖLÜMÜ BAŞLANGICI -->
+    <section class="hero">
+        <!-- Ana Başlık -->
+        <h1>Günün En Güzel Anı</h1>
+        
+        <!-- Alt Açıklama -->
+        <p>Taze çekirdeklerden özenle hazırlanan, ruhunuzu ısıtacak eşsiz kahve deneyimi.</p>
+        
+        <!-- Aksiyon Butonu -->
+        <a href="urunler.html" class="btn">Menüyü Keşfet</a>
+    </section>
+    <!-- HERO BÖLÜMÜ BİTİŞİ -->
+
+    <!-- ÖNE ÇIKANLAR BÖLÜMÜ BAŞLANGICI -->
+    <section>
+        <h2 class="section-title">Öne Çıkan Kahvelerimiz</h2>
+        
+        <!-- Grid Yapısı (Yan Yana Kutular) -->
+        <div class="grid-container">
+            <!-- 1. Ürün Kartı -->
+            <div class="card">
+                <!-- Temsili Ürün Resmi -->
+                <img src="assets/latte.jpg" alt="Latte" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Özel Latte</h3>
+                    <p>Yumuşak içimli espresso ve kadifemsi sütün muhteşem uyumu.</p>
+                    <span class="price">85 ₺</span>
+                </div>
+            </div>
+
+            <!-- 2. Ürün Kartı -->
+            <div class="card">
+                <!-- Temsili Ürün Resmi -->
+                <img src="assets/espresso.jpg" alt="Espresso" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Güçlü Espresso</h3>
+                    <p>Güne zinde başlamak isteyenler için yoğun ve aromatik.</p>
+                    <span class="price">60 ₺</span>
+                </div>
+            </div>
+
+            <!-- 3. Ürün Kartı -->
+            <div class="card">
+                <!-- Temsili Ürün Resmi -->
+                <img src="assets/mocha.jpg" alt="Mocha" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Çikolatalı Mocha</h3>
+                    <p>Kahve ve çikolatanın tatlı buluşması.</p>
+                    <span class="price">90 ₺</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ÖNE ÇIKANLAR BÖLÜMÜ BİTİŞİ -->
+
+    <!-- KISA HAKKIMIZDA BÖLÜMÜ -->
+    <section style="background-color: var(--white); text-align: center;">
+        <h2 class="section-title">Biz Kimiz?</h2>
+        <p style="max-width: 800px; margin: 0 auto 2rem auto;">
+            2010 yılından beri şehrin en taze kahve çekirdeklerini sizin için kavuruyoruz. 
+            Amacımız sadece kahve satmak değil, size huzurlu bir mola anı sunmak.
+        </p>
+        <a href="hakkımızda.html" class="btn">Hikayemizi Oku</a>
+    </section>
+
+    <!-- FOOTER (ALT BİLGİ) BAŞLANGICI -->
+    <footer>
+        <p>&copy; 2023 Lil Street Coffee. Tüm hakları saklıdır.</p>
+    </footer>
+    <!-- FOOTER BİTİŞİ -->
+
+</body>
+</html>
