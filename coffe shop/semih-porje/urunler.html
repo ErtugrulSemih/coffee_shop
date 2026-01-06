@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ürünlerimiz - Lil Street Coffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVİGASYON -->
     <header>
         <nav>
             <div class="logo"><a href="index.html">Lil Street Coffee</a></div>
-            
+
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-icon">
                 <span></span>
@@ -33,7 +35,7 @@
     <!-- ÜRÜN MENÜSÜ BAŞLANGICI -->
     <section>
         <h1 class="section-title">Menümüz</h1>
-        
+
         <!-- CSS ile Filtreleme Mantığı (Radio Button Hack) -->
         <!-- Bu inputlar gizlenecek, ancak seçim durumları CSS ile yakalanacak -->
         <input type="radio" name="filter" id="filter-all" checked hidden>
@@ -52,7 +54,7 @@
 
         <!-- Ürün Listesi Grid Yapısı -->
         <div class="grid-container">
-            
+
             <!-- Ürün 1: Americano (Sıcak) -->
             <div class="card hot">
                 <img src="assets/americano.jpg" alt="Americano" class="card-img">
@@ -80,6 +82,16 @@
                     <h3 class="card-title">Cappuccino</h3>
                     <p>Eşit oranda espresso, süt ve süt köpüğü.</p>
                     <span class="price">75 ₺</span>
+                </div>
+            </div>
+
+            <!-- Ürün: Türk Kahvesi (Sıcak) -->
+            <div class="card hot">
+                <img src="assets/turk-kahvesi.jpg" alt="Türk Kahvesi" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Türk Kahvesi</h3>
+                    <p>Geleneksel lezzet, bol köpüklü.</p>
+                    <span class="price">60 ₺</span>
                 </div>
             </div>
 
@@ -113,6 +125,16 @@
                 </div>
             </div>
 
+            <!-- Ürün7: Şöbiyet (Tatlı) -->
+            <div class="card dessert">
+                <img src="assets/sobiyet.jpg" alt="Şöbiyet" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Şöbiyet</h3>
+                    <p>Bol fıstıklı ve kaymaklı geleneksel lezzet.</p>
+                    <span class="price">100 ₺</span>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- ÜRÜN MENÜSÜ BİTİŞİ -->
@@ -123,4 +145,5 @@
     </footer>
 
 </body>
+
 </html>
